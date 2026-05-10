@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Результат проверки | Web-сервис генерации тестов РБД{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h2>Результат проверки</h2>
+
+    {% if result.success %}
+        <div class="verdict success">
+            Тест пройден. Данные в центральной БД соответствуют ожидаемому результату.
+        </div>
+    {% else %}
+        <div class="verdict failure">
+            Тест не пройден. Обнаружены расхождения.
+        </div>
+    {% endif %}
+
+    <p>Ожидаемое количество записей: <strong>{{ result.expected_count }}</strong></p>
+    <p>Фактическое количество записей: <strong>{{ result.actual_count }}</strong></p>
+
+    {% if result.errors %}
+        <h3>Список ошибок</h3>
+        <ul class="errors">
+            {% for error in result.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <a class="button-link" href="{{ url_for('index') }}">Вернуться на главную</a>
+</section>
+{% endblock %}

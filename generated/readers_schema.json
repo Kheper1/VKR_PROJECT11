@@ -1,0 +1,41 @@
+{
+  "table": "readers",
+  "description": "Таблица Читатели для проверки работоспособности распределённой базы данных",
+  "columns": [
+    {
+      "name": "reader_id",
+      "type": "INT",
+      "primary_key": true
+    },
+    {
+      "name": "full_name",
+      "type": "VARCHAR(255)",
+      "nullable": false
+    },
+    {
+      "name": "birth_date",
+      "type": "DATE",
+      "nullable": true
+    },
+    {
+      "name": "phone",
+      "type": "VARCHAR(30)",
+      "nullable": true
+    },
+    {
+      "name": "email",
+      "type": "VARCHAR(255)",
+      "nullable": true
+    },
+    {
+      "name": "branch_id",
+      "type": "INT",
+      "nullable": false
+    },
+    {
+      "name": "is_deleted",
+      "type": "BOOLEAN",
+      "nullable": false
+    }
+  ]
+}
