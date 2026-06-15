@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dataset>
-    <readers reader_id="1" full_name="Ivanov Ivan Ivanovich" birth_date="1990-01-15" phone="+7-900-111-11-11" email="ivanov@example.com" branch_id="1" is_deleted="0"/>
-    <readers reader_id="2" full_name="Petrova Anna Sergeevna" birth_date="1988-05-20" phone="+7-900-222-22-22" email="petrova@example.com" branch_id="2" is_deleted="0"/>
-    <readers reader_id="3" full_name="Sidorov Petr Andreevich" birth_date="1995-09-10" phone="+7-900-333-33-33" email="sidorov@example.com" branch_id="3" is_deleted="0"/>
-</dataset>
